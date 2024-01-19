@@ -9,14 +9,17 @@
   </head>
   <body>
     <h1>Formulário de Contato</h1>
-    <form action="./enviar-email.php" method="POST" class="form">
-      <label for="nome">Nome</label>
-      <input type="text" name="nome" id="nome" required />
-      <label for="email">E-mail</label>
-      <input type="email" name="email" id="email" required />
-      <label for="mensagem">Mensagem</label>
-      <textarea name="mensagem" id="mensagem" required></textarea>
-      <button type="submit">Enviar</button>
+    <form action="https://api.staticforms.xyz/submit" method="POST" class="form">
+        <input type="hidden" name="accessKey" value="d6a0fb39-6b8c-4f5c-b2e6-f56915684926">
+        <input type="hidden" name="redirectTo" value="https://ederjz.000webhostapp.com/">
+        
+        <label for="nome">Nome</label>
+        <input type="text" name="name" id="nome" required />
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" required />
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" required></textarea>
+        <button type="submit">Enviar</button>
     </form>
   </body>
 </html>
